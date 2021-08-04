@@ -14,7 +14,7 @@ function sorting(input) {
     }
 }
 
-function binary_search(input, search) {
+function binary_search() {
     sorting(input)
     let searching = true;
 
@@ -23,19 +23,18 @@ function binary_search(input, search) {
         if(input[middleIndex] === search) searching = false
         else if(input[middleIndex] > search) input = input.slice(0, middleIndex)
         else input = input.slice(-middleIndex)
-        console.log(middleIndex, input)
     }
     return middleIndex
 }
 
-const input = [10, 20, 80, 30, 60, 50, 
+let input = [10, 20, 80, 30, 60, 50, 
     110, 100, 130, 170, 40]
     
 const search = 100;
 const count = input.length;
 
 //Call Linear Search
-const result = binary_search(input, search, count)
+const result = binary_search()
 
 if(result) console.log(`Result is found at index ${result}`) 
 else console.log(`Result is not there in the input`)
