@@ -33,7 +33,7 @@ let input = [10, 20, 80, 30, 60, 50,
 const search = 100;
 const count = input.length;
 
-//Call Linear Search
+//Call binary Search
 const result = binary_search()
 
 if(result) console.log(`Result is found at index ${result}`) 
